@@ -1,10 +1,10 @@
 import "express-async-errors"; // Asegúrate de que esto esté al inicio del archivo
 
 import express from "express";
-import { env } from "./infrastructure/config/env";
-import { connectDatabase } from "./infrastructure/config/database";
-import { ErrorHandler } from "./infrastructure/web/middlewares/ErrorHandler";
-import { logger } from "./infrastructure/config/logger";
+import { env } from "./config/env";
+import { connectDatabase } from "./config/database";
+import { ErrorHandler } from "./interfaces/middlewares/ErrorHandler";
+import { logger } from "./config/logger";
 
 const app = express();
 app.use(express.json());

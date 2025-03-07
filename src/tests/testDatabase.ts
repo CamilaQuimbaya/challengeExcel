@@ -1,4 +1,4 @@
-import { connectDatabase } from "../infrastructure/config/database";
+import { connectDatabase } from "../config/database";
 import { UploadTaskRepository } from "../infrastructure/persistence/UploadTaskRepository";
 
 const test = async () => {
