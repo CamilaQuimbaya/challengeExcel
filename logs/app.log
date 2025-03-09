@@ -845,3 +845,135 @@
 {"level":"info","message":"✅ MongoDB Connected"}
 {"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
 {"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce1980eb44514216b6059a"}
+{"level":"info","message":"✅ Task 67ce1980eb44514216b6059a completed with 1 errors."}
+{"level":"info","message":"📨 Processing task: 67ce1a0feb44514216b6059c"}
+{"level":"info","message":"✅ Task 67ce1a0feb44514216b6059c completed with 1 errors."}
+{"level":"info","message":"📨 Processing task: 67ce1c93eb44514216b6059f"}
+{"level":"error","message":"❌ Error processing task: The value of \"offset\" is out of range. It must be >= 0 && <= 17825792. Received 17825798"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce1d731f6bd7e797cd5ec1"}
+{"level":"info","message":"✅ Task 67ce1d731f6bd7e797cd5ec1 completed with 0 errors."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce1e0152c73d08a8acf142"}
+{"level":"error","message":"❌ Error processing task: The value of \"offset\" is out of range. It must be >= 0 && <= 17825792. Received 17825798"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce1ef31485d1a783c9296c"}
+{"level":"error","message":"❌ Error processing Excel file: The value of \"offset\" is out of range. It must be >= 0 && <= 17825792. Received 17825798"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce1fc448f35148d9c0ddb4"}
+{"level":"info","message":"✅ Task 67ce1fc448f35148d9c0ddb4 completed with 200000 errors."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce20bf467a38a971f5f991"}
+{"level":"error","message":"❌ Error processing task: The value of \"offset\" is out of range. It must be >= 0 && <= 17825792. Received 17825798"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce2165e9d0854b0ff2a11e"}
+{"level":"info","message":"✅ Task 67ce2165e9d0854b0ff2a11e completed with 0 errors and 0 valid rows."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: {\"taskId\":\"67ce24b46405e28fcae2535e\",\"filePath\":\"uploads\\\\6c0a4d16c000653314fd38386640f7ed\",\"mapping\":{\"name\":\"String\",\"age\":\"Number\",\"nums\":\"Array<Number>\"}}"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}

@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import ExcelProcessor from '../../application/ExcelProcessor';
+import TaskService from '../../application/TaskService';
 import UploadTaskModel from '../../infrastructure/persistence/UploadTaskModel';
 
 class UploadController {
@@ -24,7 +24,7 @@ class UploadController {
             }
 
             const filePath = req.file.path;
-            const result = await ExcelProcessor.processFile(filePath, mapping);
+            const result = await TaskService.startTask(filePath, mapping);
 
             res.status(201).json({ taskId: result.id });
         } catch (error) {

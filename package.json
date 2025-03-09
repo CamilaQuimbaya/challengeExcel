@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --ext ts --exec ts-node src/server.ts",
-    "dev-mq": "nodemon --ext ts --exec ts-node src/infrastructure/messaging/TaskProcessor.ts",
+    "dev-mq": "nodemon --ext ts --exec ts-node src/infrastructure/messaging/QueueConsumer.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
