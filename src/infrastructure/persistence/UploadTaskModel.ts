@@ -1,13 +1,8 @@
 import mongoose from "mongoose";
 
-const uploadTaskSchema = new mongoose.Schema({
-  status: {
-    type: String,
-    enum: ["pending", "processing", "done"],
-    default: "pending",
-  },
-  errors: [{ row: Number, col: Number, message: String }],
-  createdAt: { type: Date, default: Date.now },
+const UploadTaskSchema = new mongoose.Schema({
+  status: { type: String, required: true, enum: ["pending", "processing", "done", "error"], default: "pending" },
+  errorList: { type: Array, default: [] } // ✅ Nuevo nombre
 });
 
-export const UploadTaskModel = mongoose.model("UploadTask", uploadTaskSchema);
+export const UploadTaskModel = mongoose.model("UploadTask", UploadTaskSchema);

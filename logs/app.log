@@ -8,3 +8,526 @@
 {"level":"info","message":"✅ MongoDB Connected"}
 {"level":"info","message":"🚀 Server running on port 3000"}
 {"errorLabelSet":{},"level":"error","message":"❌ MongoDB Connection Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":96101338,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\connection.js:1165:11)\n    at NativeConnection.openUri (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\connection.js:1096:11)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at listOnTimeout (node:internal/timers:540:9)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"errorLabelSet":{},"level":"error","message":"❌ MongoDB Connection Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":7073018,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\connection.js:1165:11)\n    at NativeConnection.openUri (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\connection.js:1096:11)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at listOnTimeout (node:internal/timers:540:9)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"error","message":"❌ Error: Unexpected field"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"error","message":"❌ Error: Unexpected field"}
+{"level":"warn","message":"RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"error","message":"❌ Error: Unexpected field"}
+{"level":"warn","message":"RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"RabbitMQ connection error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"level":"warn","message":"🔄 Reconnecting to RabbitMQ... Attempt 1/10"}
+{"level":"warn","message":"RabbitMQ connection closed. Reconnecting..."}
+{"level":"warn","message":"🔄 Reconnecting to RabbitMQ... Attempt 2/10"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741483074807-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccec42935b5fcf9fd519df"}
+{"filePath":"uploads\\1741483166408-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccec9e935b5fcf9fd519e1"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741483686349-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cceea6533f52f74af824cb"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741483971369-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccefc39c2686ad9c323ee8"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741485696045-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccf68025b1b1d5c5782fab"}
+{"filePath":"uploads\\1741485790377-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccf6de25b1b1d5c5782fad"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741485842476-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccf7120062369b7d39e4d4"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741486291990-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccf8d4cd8a5a3496934d61"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741486310678-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ccf8e6fc4579784866b254"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Iniciando el consumidor de tareas..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🟢 Started consuming messages from queue"}
+{"filePath":"uploads\\1741483074807-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec42935b5fcf9fd519df"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec42935b5fcf9fd519df\",\"filePath\":\"uploads\\\\1741483074807-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccec42935b5fcf9fd519df"}
+{"filePath":"uploads\\1741483166408-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec9e935b5fcf9fd519e1"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec9e935b5fcf9fd519e1\",\"filePath\":\"uploads\\\\1741483166408-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccec9e935b5fcf9fd519e1"}
+{"filePath":"uploads\\1741483686349-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cceea6533f52f74af824cb"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cceea6533f52f74af824cb\",\"filePath\":\"uploads\\\\1741483686349-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67cceea6533f52f74af824cb"}
+{"filePath":"uploads\\1741483971369-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccefc39c2686ad9c323ee8"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccefc39c2686ad9c323ee8\",\"filePath\":\"uploads\\\\1741483971369-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccefc39c2686ad9c323ee8"}
+{"filePath":"uploads\\1741485696045-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf68025b1b1d5c5782fab"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf68025b1b1d5c5782fab\",\"filePath\":\"uploads\\\\1741485696045-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf68025b1b1d5c5782fab"}
+{"filePath":"uploads\\1741485790377-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf6de25b1b1d5c5782fad"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf6de25b1b1d5c5782fad\",\"filePath\":\"uploads\\\\1741485790377-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf6de25b1b1d5c5782fad"}
+{"filePath":"uploads\\1741485842476-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf7120062369b7d39e4d4"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf7120062369b7d39e4d4\",\"filePath\":\"uploads\\\\1741485842476-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf7120062369b7d39e4d4"}
+{"filePath":"uploads\\1741486291990-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8d4cd8a5a3496934d61"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8d4cd8a5a3496934d61\",\"filePath\":\"uploads\\\\1741486291990-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf8d4cd8a5a3496934d61"}
+{"filePath":"uploads\\1741486310678-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8e6fc4579784866b254"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8e6fc4579784866b254\",\"filePath\":\"uploads\\\\1741486310678-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf8e6fc4579784866b254"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec42935b5fcf9fd519df: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec9e935b5fcf9fd519e1: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67cceea6533f52f74af824cb: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccefc39c2686ad9c323ee8: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf68025b1b1d5c5782fab: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf6de25b1b1d5c5782fad: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf7120062369b7d39e4d4: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8d4cd8a5a3496934d61: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8e6fc4579784866b254: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"info","message":"🚀 Iniciando el consumidor de tareas..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🟢 Started consuming messages from queue"}
+{"filePath":"uploads\\1741483074807-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec42935b5fcf9fd519df"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec42935b5fcf9fd519df\",\"filePath\":\"uploads\\\\1741483074807-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccec42935b5fcf9fd519df"}
+{"filePath":"uploads\\1741483166408-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec9e935b5fcf9fd519e1"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec9e935b5fcf9fd519e1\",\"filePath\":\"uploads\\\\1741483166408-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccec9e935b5fcf9fd519e1"}
+{"filePath":"uploads\\1741483686349-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cceea6533f52f74af824cb"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cceea6533f52f74af824cb\",\"filePath\":\"uploads\\\\1741483686349-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67cceea6533f52f74af824cb"}
+{"filePath":"uploads\\1741483971369-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccefc39c2686ad9c323ee8"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccefc39c2686ad9c323ee8\",\"filePath\":\"uploads\\\\1741483971369-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccefc39c2686ad9c323ee8"}
+{"filePath":"uploads\\1741485696045-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf68025b1b1d5c5782fab"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf68025b1b1d5c5782fab\",\"filePath\":\"uploads\\\\1741485696045-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf68025b1b1d5c5782fab"}
+{"filePath":"uploads\\1741485790377-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf6de25b1b1d5c5782fad"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf6de25b1b1d5c5782fad\",\"filePath\":\"uploads\\\\1741485790377-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf6de25b1b1d5c5782fad"}
+{"filePath":"uploads\\1741485842476-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf7120062369b7d39e4d4"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf7120062369b7d39e4d4\",\"filePath\":\"uploads\\\\1741485842476-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf7120062369b7d39e4d4"}
+{"filePath":"uploads\\1741486291990-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8d4cd8a5a3496934d61"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8d4cd8a5a3496934d61\",\"filePath\":\"uploads\\\\1741486291990-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf8d4cd8a5a3496934d61"}
+{"filePath":"uploads\\1741486310678-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8e6fc4579784866b254"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8e6fc4579784866b254\",\"filePath\":\"uploads\\\\1741486310678-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf8e6fc4579784866b254"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec42935b5fcf9fd519df: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec9e935b5fcf9fd519e1: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67cceea6533f52f74af824cb: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccefc39c2686ad9c323ee8: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf68025b1b1d5c5782fab: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf6de25b1b1d5c5782fad: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf7120062369b7d39e4d4: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8d4cd8a5a3496934d61: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8e6fc4579784866b254: Operation `uploadtasks.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"❌ RabbitMQ connection error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"level":"warn","message":"🔄 Reconnecting to RabbitMQ... Attempt 1/10"}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"warn","message":"⚠️ RabbitMQ connection closed. Reconnecting..."}
+{"level":"warn","message":"🔄 Reconnecting to RabbitMQ... Attempt 2/10"}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741492148732-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd0fb46402d14646740e5d"}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Iniciando el consumidor de tareas..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🟢 Started consuming messages from queue"}
+{"filePath":"uploads\\1741483074807-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec42935b5fcf9fd519df"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec42935b5fcf9fd519df\",\"filePath\":\"uploads\\\\1741483074807-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec42935b5fcf9fd519df: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741483166408-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec9e935b5fcf9fd519e1"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec9e935b5fcf9fd519e1\",\"filePath\":\"uploads\\\\1741483166408-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec9e935b5fcf9fd519e1: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741483686349-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cceea6533f52f74af824cb"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cceea6533f52f74af824cb\",\"filePath\":\"uploads\\\\1741483686349-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67cceea6533f52f74af824cb: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741483971369-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccefc39c2686ad9c323ee8"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccefc39c2686ad9c323ee8\",\"filePath\":\"uploads\\\\1741483971369-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccefc39c2686ad9c323ee8: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741485696045-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf68025b1b1d5c5782fab"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf68025b1b1d5c5782fab\",\"filePath\":\"uploads\\\\1741485696045-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf68025b1b1d5c5782fab: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741485790377-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf6de25b1b1d5c5782fad"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf6de25b1b1d5c5782fad\",\"filePath\":\"uploads\\\\1741485790377-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf6de25b1b1d5c5782fad: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741485842476-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf7120062369b7d39e4d4"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf7120062369b7d39e4d4\",\"filePath\":\"uploads\\\\1741485842476-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf7120062369b7d39e4d4: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741486291990-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8d4cd8a5a3496934d61"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8d4cd8a5a3496934d61\",\"filePath\":\"uploads\\\\1741486291990-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8d4cd8a5a3496934d61: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741486310678-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8e6fc4579784866b254"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8e6fc4579784866b254\",\"filePath\":\"uploads\\\\1741486310678-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8e6fc4579784866b254: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"filePath":"uploads\\1741492148732-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cd0fb46402d14646740e5d"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd0fb46402d14646740e5d\",\"filePath\":\"uploads\\\\1741492148732-test_data.xlsx\"}"}
+{"level":"error","message":"❌ Error procesando la tarea 67cd0fb46402d14646740e5d: ❌ MongoDB no está conectado. No se pueden procesar tareas.","stack":"Error: ❌ MongoDB no está conectado. No se pueden procesar tareas.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:12:19)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at Function.processTask (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:24:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:78:37)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Iniciando el consumidor de tareas..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🟢 Started consuming messages from queue"}
+{"filePath":"uploads\\1741483074807-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec42935b5fcf9fd519df"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec42935b5fcf9fd519df\",\"filePath\":\"uploads\\\\1741483074807-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccec42935b5fcf9fd519df"}
+{"filePath":"uploads\\1741483166408-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccec9e935b5fcf9fd519e1"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccec9e935b5fcf9fd519e1\",\"filePath\":\"uploads\\\\1741483166408-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccec9e935b5fcf9fd519e1"}
+{"filePath":"uploads\\1741483686349-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cceea6533f52f74af824cb"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cceea6533f52f74af824cb\",\"filePath\":\"uploads\\\\1741483686349-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67cceea6533f52f74af824cb"}
+{"filePath":"uploads\\1741483971369-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccefc39c2686ad9c323ee8"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccefc39c2686ad9c323ee8\",\"filePath\":\"uploads\\\\1741483971369-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccefc39c2686ad9c323ee8"}
+{"filePath":"uploads\\1741485696045-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf68025b1b1d5c5782fab"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf68025b1b1d5c5782fab\",\"filePath\":\"uploads\\\\1741485696045-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf68025b1b1d5c5782fab"}
+{"filePath":"uploads\\1741485790377-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf6de25b1b1d5c5782fad"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf6de25b1b1d5c5782fad\",\"filePath\":\"uploads\\\\1741485790377-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf6de25b1b1d5c5782fad"}
+{"filePath":"uploads\\1741485842476-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf7120062369b7d39e4d4"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf7120062369b7d39e4d4\",\"filePath\":\"uploads\\\\1741485842476-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf7120062369b7d39e4d4"}
+{"filePath":"uploads\\1741486291990-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8d4cd8a5a3496934d61"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8d4cd8a5a3496934d61\",\"filePath\":\"uploads\\\\1741486291990-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf8d4cd8a5a3496934d61"}
+{"filePath":"uploads\\1741486310678-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67ccf8e6fc4579784866b254"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67ccf8e6fc4579784866b254\",\"filePath\":\"uploads\\\\1741486310678-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67ccf8e6fc4579784866b254"}
+{"filePath":"uploads\\1741492148732-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cd0fb46402d14646740e5d"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd0fb46402d14646740e5d\",\"filePath\":\"uploads\\\\1741492148732-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67cd0fb46402d14646740e5d"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec42935b5fcf9fd519df: ❌ No se encontró la tarea con ID: 67ccec42935b5fcf9fd519df","stack":"Error: ❌ No se encontró la tarea con ID: 67ccec42935b5fcf9fd519df\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:22:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccefc39c2686ad9c323ee8: ❌ No se encontró la tarea con ID: 67ccefc39c2686ad9c323ee8","stack":"Error: ❌ No se encontró la tarea con ID: 67ccefc39c2686ad9c323ee8\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:22:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf68025b1b1d5c5782fab: ❌ No se encontró la tarea con ID: 67ccf68025b1b1d5c5782fab","stack":"Error: ❌ No se encontró la tarea con ID: 67ccf68025b1b1d5c5782fab\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:22:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67ccf6de25b1b1d5c5782fad\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67ccf7120062369b7d39e4d4\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67ccf8d4cd8a5a3496934d61\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67ccf8e6fc4579784866b254\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67cd0fb46402d14646740e5d\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67ccec42935b5fcf9fd519df"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741485790377-test_data.xlsx"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf6de25b1b1d5c5782fad: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums","stack":"Error: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:26:13)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:41:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:37:12)\n    at Function.parseExcel (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:49:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:37:55)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741485842476-test_data.xlsx"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf7120062369b7d39e4d4: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums","stack":"Error: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:26:13)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:41:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:37:12)\n    at Function.parseExcel (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:49:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:37:55)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741486291990-test_data.xlsx"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8d4cd8a5a3496934d61: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums","stack":"Error: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:26:13)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:41:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:37:12)\n    at Function.parseExcel (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:49:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:37:55)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741486310678-test_data.xlsx"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccf8e6fc4579784866b254: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums","stack":"Error: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:26:13)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:41:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:37:12)\n    at Function.parseExcel (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:49:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:37:55)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741492148732-test_data.xlsx"}
+{"level":"error","message":"❌ Error procesando la tarea 67cd0fb46402d14646740e5d: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums","stack":"Error: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:26:13)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:41:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:37:12)\n    at Function.parseExcel (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:49:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:37:55)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67ccf6de25b1b1d5c5782fad"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67ccf7120062369b7d39e4d4"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"beforeHandshake":false,"connectionGeneration":0,"errorLabelSet":{},"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Socket 'connect' timed out after 33045ms (connectTimeoutMS: 30000)","stack":"MongoNetworkTimeoutError: Socket 'connect' timed out after 33045ms (connectTimeoutMS: 30000)\n    at Socket.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongodb\\src\\cmap\\connect.ts:398:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Socket.emit (node:events:519:28)\n    at Socket.emit (node:domain:488:12)\n    at Socket._onTimeout (node:net:590:8)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"beforeHandshake":false,"connectionGeneration":0,"errorLabelSet":{},"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: Socket 'connect' timed out after 33056ms (connectTimeoutMS: 30000)","stack":"MongoNetworkTimeoutError: Socket 'connect' timed out after 33056ms (connectTimeoutMS: 30000)\n    at Socket.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\mongodb\\src\\cmap\\connect.ts:398:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Socket.emit (node:events:519:28)\n    at Socket.emit (node:domain:488:12)\n    at Socket._onTimeout (node:net:590:8)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67ccf8d4cd8a5a3496934d61"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"error","message":"❌ Error procesando la tarea 67cceea6533f52f74af824cb: ❌ No se encontró la tarea con ID: 67cceea6533f52f74af824cb","stack":"Error: ❌ No se encontró la tarea con ID: 67cceea6533f52f74af824cb\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:22:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"❌ Error procesando la tarea 67ccec9e935b5fcf9fd519e1: ❌ No se encontró la tarea con ID: 67ccec9e935b5fcf9fd519e1","stack":"Error: ❌ No se encontró la tarea con ID: 67ccec9e935b5fcf9fd519e1\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:22:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67cceea6533f52f74af824cb"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67ccec9e935b5fcf9fd519e1"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67ccf8e6fc4579784866b254"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67cd0fb46402d14646740e5d"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741492897933-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd12a125196eb290023b46"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Iniciando el consumidor de tareas..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🟢 Started consuming messages from queue"}
+{"filePath":"uploads\\1741492897933-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cd12a125196eb290023b46"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd12a125196eb290023b46\",\"filePath\":\"uploads\\\\1741492897933-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67cd12a125196eb290023b46"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67cd12a125196eb290023b46\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741492897933-test_data.xlsx"}
+{"level":"error","message":"❌ Error procesando la tarea 67cd12a125196eb290023b46: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums","stack":"Error: El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:26:13)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:41:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:37:12)\n    at Function.parseExcel (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\ExcelProcessor.ts:49:16)\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:37:55)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67cd12a125196eb290023b46"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741493341754-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd145d2a846c60b748aa42"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Iniciando el consumidor de tareas..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🟢 Started consuming messages from queue"}
+{"filePath":"uploads\\1741493341754-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cd145d2a846c60b748aa42"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd145d2a846c60b748aa42\",\"filePath\":\"uploads\\\\1741493341754-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67cd145d2a846c60b748aa42"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67cd145d2a846c60b748aa42\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741493341754-test_data.xlsx"}
+{"level":"info","message":"📊 Archivo procesado: 200000 filas, 0 errores"}
+{"level":"info","message":"📋 Se guardaron 0 errores en la base de datos"}
+{"level":"info","message":"💾 Se guardaron los datos procesados en la base de datos"}
+{"level":"info","message":"✅ Estado de la tarea actualizado a 'done' en MongoDB"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","status":"done","taskId":"67cd145d2a846c60b748aa42"}
+{"level":"info","message":"📩 Notificación enviada a RabbitMQ: tarea 67cd145d2a846c60b748aa42 marcada como 'done'"}
+{"level":"info","message":"🗑️ Archivo eliminado: uploads\\1741493341754-test_data.xlsx"}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67cd145d2a846c60b748aa42"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"📨 Message received from queue:","status":"done","taskId":"67cd145d2a846c60b748aa42"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd145d2a846c60b748aa42\",\"status\":\"done\"}"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: ❌ El mensaje recibido no contiene un filePath válido.","stack":"Error: ❌ El mensaje recibido no contiene un filePath válido.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:76:27)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:65:64\n    at channel.consume.noAck (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\QueueService.ts:92:29)\n    at Channel.BaseChannel.dispatchMessage (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:483:12)\n    at Channel.BaseChannel.handleDelivery (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:492:15)\n    at Channel.emit (node:events:519:28)"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"filePath":"uploads\\1741494098853-test_data.xlsx","level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd175241f48b8f57590fe5"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Iniciando el consumidor de tareas..."}
+{"level":"info","message":"📡 Connecting to RabbitMQ at amqp://localhost:5672"}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🟢 Started consuming messages from queue"}
+{"level":"info","message":"📨 Message received from queue:","status":"done","taskId":"67cd145d2a846c60b748aa42"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd145d2a846c60b748aa42\",\"status\":\"done\"}"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: ❌ El mensaje recibido no contiene un filePath válido.","stack":"Error: ❌ El mensaje recibido no contiene un filePath válido.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:76:27)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:65:64\n    at channel.consume.noAck (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\QueueService.ts:92:29)\n    at Channel.BaseChannel.dispatchMessage (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:483:12)\n    at Channel.BaseChannel.handleDelivery (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:492:15)\n    at Channel.emit (node:events:519:28)"}
+{"filePath":"uploads\\1741494098853-test_data.xlsx","level":"info","message":"📨 Message received from queue:","taskId":"67cd175241f48b8f57590fe5"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd175241f48b8f57590fe5\",\"filePath\":\"uploads\\\\1741494098853-test_data.xlsx\"}"}
+{"level":"info","message":"🛠️ Iniciando procesamiento de la tarea: 67cd175241f48b8f57590fe5"}
+{"level":"info","message":"📄 Tarea encontrada en MongoDB: {\"_id\":\"67cd175241f48b8f57590fe5\",\"status\":\"pending\",\"errorList\":[],\"__v\":0}"}
+{"level":"info","message":"🔄 Estado de la tarea actualizado a 'processing' en MongoDB"}
+{"level":"info","message":"📂 Archivo encontrado: uploads\\1741494098853-test_data.xlsx"}
+{"level":"info","message":"📊 Archivo procesado: 200000 filas, 0 errores"}
+{"level":"info","message":"📋 Se guardaron 0 errores en la base de datos"}
+{"level":"info","message":"💾 Se guardaron los datos procesados en la base de datos"}
+{"level":"info","message":"✅ Estado de la tarea actualizado a 'done' en MongoDB"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","status":"done","taskId":"67cd175241f48b8f57590fe5"}
+{"level":"info","message":"📩 Notificación enviada a RabbitMQ: tarea 67cd175241f48b8f57590fe5 marcada como 'done'"}
+{"level":"info","message":"🗑️ Archivo eliminado: uploads\\1741494098853-test_data.xlsx"}
+{"level":"info","message":"📤 Mensaje confirmado con ack(): 67cd175241f48b8f57590fe5"}
+{"level":"info","message":"🔄 Esperando el siguiente mensaje..."}
+{"level":"info","message":"📨 Message received from queue:","status":"done","taskId":"67cd175241f48b8f57590fe5"}
+{"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd175241f48b8f57590fe5\",\"status\":\"done\"}"}
+{"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: ❌ El mensaje recibido no contiene un filePath válido.","stack":"Error: ❌ El mensaje recibido no contiene un filePath válido.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:76:27)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:65:64\n    at channel.consume.noAck (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\QueueService.ts:92:29)\n    at Channel.BaseChannel.dispatchMessage (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:483:12)\n    at Channel.BaseChannel.handleDelivery (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:492:15)\n    at Channel.emit (node:events:519:28)"}

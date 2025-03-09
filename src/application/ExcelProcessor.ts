@@ -1,52 +1,48 @@
-import * as xlsx from 'xlsx';
-import { logger } from '../config/logger';
+import * as XLSX from 'xlsx';
+import { Readable } from 'stream';
 
-class ExcelProcessor {
-    processFile(buffer: Buffer): { data: any[]; errors: any[] } {
-        try {
-            const workbook = xlsx.read(buffer, { type: 'buffer' });
-            const sheetName = workbook.SheetNames[0];
-            const worksheet = workbook.Sheets[sheetName];
-            
-            const jsonData = xlsx.utils.sheet_to_json(worksheet, { raw: false });
-            const { data, errors } = this.validateData(jsonData);
-
-            return { data, errors };
-        } catch (error) {
-            logger.error('Error processing Excel file', error);
-            throw new Error('Failed to process Excel file');
-        }
-    }
-
-    private validateData(data: any[]): { data: any[]; errors: any[] } {
-        const validData: any[] = [];
-        const errors: any[] = [];
-        
-        data.forEach((row, index) => {
-            const { name, age, nums } = row;
-            const rowErrors: any[] = [];
-            
-            if (typeof name !== 'string') {
-                rowErrors.push({ row: index + 2, col: 1 });
-            }
-            if (isNaN(Number(age))) {
-                rowErrors.push({ row: index + 2, col: 2 });
-            }
-            if (!Array.isArray(nums)) {
-                rowErrors.push({ row: index + 2, col: 3 });
-            } else {
-                row.nums = nums.map(Number).sort((a, b) => a - b);
-            }
-
-            if (rowErrors.length > 0) {
-                errors.push(...rowErrors);
-            } else {
-                validData.push(row);
-            }
-        });
-
-        return { data: validData, errors };
-    }
+interface ParsedRow {
+  name?: string;
+  age?: number;
+  nums?: number[];
 }
 
-export const excelProcessor = new ExcelProcessor();
+export class ExcelProcessor {
+  static async parseExcel(fileBuffer: Buffer): Promise<{ data: ParsedRow[], errors: { row: number, col: number }[] }> {
+    const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
+    const sheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[sheetName];
+    const rows = XLSX.utils.sheet_to_json<any[]>(worksheet, { header: 1 });
+    
+    let errors: { row: number, col: number }[] = [];
+    let data: ParsedRow[] = [];
+
+    if (rows.length === 0) {
+      throw new Error('El archivo Excel está vacío');
+    }
+
+    const headers = rows[0];
+    if (!headers.includes('Nombre') || !headers.includes('Edad') || !headers.includes('Nums')) {
+      throw new Error('El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums');
+    }
+
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      let parsedRow: ParsedRow = {};
+      
+      try {
+        parsedRow.name = typeof row[0] === 'string' ? row[0] : (() => { errors.push({ row: i + 1, col: 1 }); return undefined; })();
+        parsedRow.age = typeof row[1] === 'number' ? row[1] : (() => { errors.push({ row: i + 1, col: 2 }); return undefined; })();
+        parsedRow.nums = Array.isArray(row[2]) || typeof row[2] === 'string' 
+          ? row[2].toString().split(',').map(n => parseInt(n.trim())).filter(n => !isNaN(n)).sort((a, b) => a - b) 
+          : (() => { errors.push({ row: i + 1, col: 3 }); return undefined; })();
+      } catch (err) {
+        errors.push({ row: i + 1, col: 1 });
+      }
+      
+      data.push(parsedRow);
+    }
+
+    return { data, errors };
+  }
+}
