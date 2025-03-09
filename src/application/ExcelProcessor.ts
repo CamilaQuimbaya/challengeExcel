@@ -1,48 +1,102 @@
-import * as XLSX from 'xlsx';
-import { Readable } from 'stream';
+import xlsx from 'xlsx';
+import UploadTaskRepository from '../infrastructure/persistence/UploadTaskRepository';
 
-interface ParsedRow {
-  name?: string;
-  age?: number;
-  nums?: number[];
+interface MappingFormat {
+    [key: string]: 'String' | 'Number' | 'Array<Number>';
 }
 
-export class ExcelProcessor {
-  static async parseExcel(fileBuffer: Buffer): Promise<{ data: ParsedRow[], errors: { row: number, col: number }[] }> {
-    const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
-    const sheetName = workbook.SheetNames[0];
-    const worksheet = workbook.Sheets[sheetName];
-    const rows = XLSX.utils.sheet_to_json<any[]>(worksheet, { header: 1 });
-    
-    let errors: { row: number, col: number }[] = [];
-    let data: ParsedRow[] = [];
+interface ErrorEntry {
+    row: number;
+    col: number;
+}
 
-    if (rows.length === 0) {
-      throw new Error('El archivo Excel está vacío');
+class ExcelProcessor {
+    private errors: ErrorEntry[] = [];
+
+    async processFile(filePath: string, mapping: MappingFormat) {
+        const workbook = xlsx.readFile(filePath);
+        const sheetName = workbook.SheetNames[0];
+        const sheet = workbook.Sheets[sheetName];
+        const rows: any[][] = xlsx.utils.sheet_to_json(sheet, { header: 1 });
+        
+        const headers = rows.shift(); // Extraer encabezados
+        if (!headers) throw new Error("Empty file or invalid format");
+        
+        this.validateHeaders(headers, mapping);
+        
+        const processedData = rows.map((row, rowIndex) => 
+            this.mapRowToObject(row, headers, mapping, rowIndex + 2)
+        ).filter(item => item !== null);
+
+        return this.saveUploadTask(processedData, mapping, filePath);
     }
 
-    const headers = rows[0];
-    if (!headers.includes('Nombre') || !headers.includes('Edad') || !headers.includes('Nums')) {
-      throw new Error('El archivo Excel no contiene los encabezados requeridos: Nombre, Edad, Nums');
+    private validateHeaders(headers: string[], mapping: MappingFormat) {
+        const expectedHeaders = Object.keys(mapping);
+        if (!expectedHeaders.every(header => headers.includes(header))) {
+            throw new Error(`Invalid file format. Expected headers: ${expectedHeaders.join(', ')}`);
+        }
     }
 
-    for (let i = 1; i < rows.length; i++) {
-      const row = rows[i];
-      let parsedRow: ParsedRow = {};
-      
-      try {
-        parsedRow.name = typeof row[0] === 'string' ? row[0] : (() => { errors.push({ row: i + 1, col: 1 }); return undefined; })();
-        parsedRow.age = typeof row[1] === 'number' ? row[1] : (() => { errors.push({ row: i + 1, col: 2 }); return undefined; })();
-        parsedRow.nums = Array.isArray(row[2]) || typeof row[2] === 'string' 
-          ? row[2].toString().split(',').map(n => parseInt(n.trim())).filter(n => !isNaN(n)).sort((a, b) => a - b) 
-          : (() => { errors.push({ row: i + 1, col: 3 }); return undefined; })();
-      } catch (err) {
-        errors.push({ row: i + 1, col: 1 });
-      }
-      
-      data.push(parsedRow);
-    }
-
-    return { data, errors };
+    private mapRowToObject(row: any[], headers: string[], mapping: MappingFormat, rowIndex: number) {
+      const obj: any = {};
+      let isValid = true;
+  
+      headers.forEach((header, colIndex) => {
+          const type = mapping[header as keyof MappingFormat];
+          if (!type) return; // Si la columna no está en el mapeo, ignorar
+  
+          const cellValue = row[colIndex];
+  
+          if (type === 'Number') {
+              const numberValue = Number(cellValue);
+              if (isNaN(numberValue)) {
+                  this.errors.push({ row: rowIndex, col: colIndex + 1 }); // ❌ Guardar errores con fila y columna
+                  isValid = false;
+              } else {
+                  obj[header] = numberValue;
+              }
+          } else if (type === 'String') {
+              obj[header] = String(cellValue || '');
+          } else if (type === 'Array<Number>') {
+              obj[header] = cellValue
+                  ? cellValue.split(',').map((num: string) => Number(num.trim())).filter((n: number) => !isNaN(n)).sort((a: number, b: number) => a - b)
+                  : [];
+          }
+      });
+  
+      return isValid ? obj : null; // Si la fila tiene errores, se ignora
   }
+  
+
+    private parseNumber(value: any, rowIndex: number, colIndex: number): number | null {
+        const numberValue = Number(value);
+        if (isNaN(numberValue)) {
+            this.errors.push({ row: rowIndex, col: colIndex + 1 });
+            return null;
+        }
+        return numberValue;
+    }
+
+    private parseNumberArray(value: string): number[] {
+        return value.split(',')
+            .map((num) => parseFloat(num.trim()))
+            .filter((n) => !isNaN(n))
+            .sort((a, b) => a - b);
+    }
+
+    private async saveUploadTask(processedData: any[], mapping: MappingFormat, filePath: string) {
+      const taskId = await UploadTaskRepository.createTask(mapping, filePath, processedData);
+      await UploadTaskRepository.updateTask(taskId, { status: 'processing', errors: this.errors });
+      return { id: taskId, data: processedData, errors: this.errors };
+  }
+  
+  
+
+    getErrors(page: number, limit: number) {
+        const startIndex = (page - 1) * limit;
+        return this.errors.slice(startIndex, startIndex + limit);
+    }
 }
+
+export default new ExcelProcessor();

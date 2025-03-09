@@ -1,58 +1,102 @@
-import { Request, Response } from "express";
-import { UploadTaskRepository } from "../../infrastructure/persistence/UploadTaskRepository";
-import { queueService } from "../../application/QueueService";
-import multer from "multer";
-import path from "path";
+import { Request, Response } from 'express';
+import amqp from 'amqplib';
+import ExcelProcessor from '../../application/ExcelProcessor';
+import UploadTaskModel from '../../infrastructure/persistence/UploadTaskModel';
 
-const upload = multer({ dest: "uploads/" }); // Guardar archivos temporalmente
+const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost:5672';
+const QUEUE_NAME = 'upload_tasks';
 
-export class UploadController {
-  static async uploadFile(req: Request, res: Response): Promise<void> {
+async function enqueueTask(taskId: string): Promise<void> {
     try {
-      if (!req.file) {
-        res.status(400).json({ message: "No se proporcionó ningún archivo." });
-        return;
-      }
+        const connection = await amqp.connect(RABBITMQ_URL);
+        const channel = await connection.createChannel();
+        await channel.assertQueue(QUEUE_NAME, { durable: true });
 
-      // Crear nueva tarea de carga en la BD
-      const uploadTaskRepository = new UploadTaskRepository();
-      const taskId = await uploadTaskRepository.createTask();
+        channel.sendToQueue(QUEUE_NAME, Buffer.from(JSON.stringify({ taskId })), { persistent: true });
+        console.log(`📨 Task enqueued: ${taskId}`);
 
-      // Enviar tarea a RabbitMQ para procesamiento
-      await queueService.sendMessage({ taskId, filePath: req.file.path });
-
-      res.status(202).json({ taskId, message: "Archivo recibido y en cola para procesamiento." });
+        await channel.close();
+        await connection.close();
     } catch (error) {
-      res.status(500).json({ message: "Error en la carga del archivo", error });
+        console.error("❌ Error enqueuing task:", error);
     }
-  }
-
-  static async getTaskStatus(req: Request, res: Response): Promise<void> {
-    try {
-      const { taskId } = req.params;
-      const uploadTaskRepository = new UploadTaskRepository();
-  
-      console.log(`🔍 Buscando estado de la tarea con ID: ${taskId}`);
-  
-      const task = await uploadTaskRepository.getTask(taskId);
-      console.log("📋 Resultado de la búsqueda en MongoDB:", task);
-  
-      if (!task) {
-        console.log("❌ Tarea no encontrada en la base de datos.");
-        res.status(404).json({ message: "Tarea no encontrada." });
-        return;
-      }
-  
-      res.status(200).json({
-        taskId: task._id,
-        status: task.status,
-        errors: task.errorList || [],
-      });
-  
-    } catch (error) {
-      console.error("❌ Error obteniendo estado de la tarea:", error);
-      res.status(500).json({ message: "Error obteniendo estado de la tarea", error });
-    }
-  }
-  
 }
+
+class UploadController {
+    async uploadFile(req: Request, res: Response): Promise<void> {
+        try {
+            if (!req.file) {
+                res.status(400).json({ message: 'No file uploaded' });
+                return;
+            }
+
+            let mapping;
+            try {
+                mapping = JSON.parse(req.body.mapping);
+            } catch (error) {
+                res.status(400).json({ message: 'Invalid JSON format in mapping' });
+                return;
+            }
+
+            if (!mapping || typeof mapping !== 'object') {
+                res.status(400).json({ message: 'Invalid or missing mapping format' });
+                return;
+            }
+
+            const filePath = req.file.path;
+            const result = await ExcelProcessor.processFile(filePath, mapping);
+            await enqueueTask(result.id);
+
+            res.status(201).json({ taskId: result.id });
+        } catch (error) {
+            const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+            res.status(500).json({ message: errorMessage });
+        }
+    }
+
+    async getTaskStatus(req: Request, res: Response): Promise<void> {
+      try {
+          const { taskId } = req.params;
+          const task = await UploadTaskModel.findById(taskId).lean();
+          if (!task) {
+              res.status(404).json({ message: 'Task not found' });
+              return;
+          }
+  
+          res.status(200).json({
+              status: task.status,
+              errorsCount: task.errorList?.length || 0,
+              mapping: task.mapping || {},
+              processedData: task.processedData || []  // ✅ Ahora sí existirá este campo en MongoDB
+          });
+      } catch (error) {
+          const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+          res.status(500).json({ message: errorMessage });
+      }
+  }
+  
+  async getTaskErrors(req: Request, res: Response): Promise<void> {
+    try {
+        const { taskId } = req.params;
+        const { page = 1, limit = 10 } = req.query;
+        const task = await UploadTaskModel.findById(taskId).lean();
+        if (!task) {
+            res.status(404).json({ message: 'Task not found' });
+            return;
+        }
+
+        // ✅ Implementar paginación de errores
+        const startIndex = (+page - 1) * +limit;
+        const paginatedErrors = task.errorList.slice(startIndex, startIndex + +limit);
+
+        res.status(200).json({ errors: paginatedErrors });
+    } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+        res.status(500).json({ message: errorMessage });
+    }
+}
+
+}
+
+    
+export default new UploadController();

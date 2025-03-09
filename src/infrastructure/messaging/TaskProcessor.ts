@@ -1,100 +1,65 @@
-import { queueService } from "../../application/QueueService";
-import { UploadTaskRepository } from "../persistence/UploadTaskRepository";
-import { logger } from "../../config/logger";
-import fs from "fs";
-import { ExcelProcessor } from "../../application/ExcelProcessor";
-import mongoose from "mongoose";
-import { connectDatabase } from "../../config/database";
+import amqp from 'amqplib';
+import { connectDatabase } from '../../config/database';
+import UploadTaskRepository from '../persistence/UploadTaskRepository';
+import { logger } from '../../config/logger';
 
-export class TaskProcessor {
-  static async processTask(taskId: string, filePath: string): Promise<void> {
-    try {
-        // ✅ Verificar conexión a MongoDB antes de continuar
-        if (mongoose.connection.readyState !== 1) {
-            throw new Error("❌ MongoDB no está conectado. No se pueden procesar tareas.");
-        }
+const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost:5672';
+const QUEUE_NAME = 'upload_tasks';
 
-        const uploadTaskRepository = new UploadTaskRepository();
-        logger.info(`🛠️ Iniciando procesamiento de la tarea: ${taskId}`);
+async function startTaskProcessor() {
+  await connectDatabase();
 
-        const task = await uploadTaskRepository.getTask(taskId);
+  try {
+    logger.info(`🔄 Connecting to RabbitMQ at ${RABBITMQ_URL}...`);
+    const connection = await amqp.connect(RABBITMQ_URL);
+    const channel = await connection.createChannel();
+    await channel.assertQueue(QUEUE_NAME, { durable: true });
+    logger.info(`✅ Connected to RabbitMQ and queue asserted`);
+
+    channel.consume(QUEUE_NAME, async (msg) => {
+      if (!msg) return;
+
+      try {
+        const { taskId } = JSON.parse(msg.content.toString());
+        logger.info(`📨 Received message from queue:`, { taskId });
+
+        const task = await UploadTaskRepository.getTask(taskId);
         if (!task) {
-            throw new Error(`❌ No se encontró la tarea con ID: ${taskId}`);
+          logger.error(`❌ Task not found with ID ${taskId}`);
+          channel.ack(msg);
+          return;
         }
 
-        logger.info(`📄 Tarea encontrada en MongoDB: ${JSON.stringify(task)}`);
-
-        await uploadTaskRepository.updateTaskStatus(taskId, "processing");
-        logger.info(`🔄 Estado de la tarea actualizado a 'processing' en MongoDB`);
-
-        if (!fs.existsSync(filePath)) {
-            throw new Error(`❌ El archivo no existe en la ruta: ${filePath}`);
+        if (!task.filePath) {
+          logger.error(`❌ Task ${taskId} has no assigned filePath.`);
+          channel.ack(msg);
+          return;
         }
 
-        logger.info(`📂 Archivo encontrado: ${filePath}`);
-        const fileBuffer = fs.readFileSync(filePath);
+        logger.info(`🛠️ Processing file: ${task.filePath}`);
+        
+        // Aquí iría la lógica real de procesamiento del archivo
 
-        const { data, errors } = await ExcelProcessor.parseExcel(fileBuffer);
-        logger.info(`📊 Archivo procesado: ${data.length} filas, ${errors.length} errores`);
+        await UploadTaskRepository.updateTask(taskId, { status: 'done' });
+        logger.info(`✅ Task status updated to 'done' in MongoDB`);
 
-        await uploadTaskRepository.updateTaskErrors(taskId, errors);
-        logger.info(`📋 Se guardaron ${errors.length} errores en la base de datos`);
+        channel.ack(msg);
+      } catch (error) {
+        logger.error(`❌ Error processing message: ${error instanceof Error ? error.message : error}`);
+        channel.nack(msg, false, false);
+      }
+    });
 
-        await uploadTaskRepository.saveProcessedData(taskId, data);
-        logger.info(`💾 Se guardaron los datos procesados en la base de datos`);
-
-        await uploadTaskRepository.updateTaskStatus(taskId, "done");
-        logger.info(`✅ Estado de la tarea actualizado a 'done' en MongoDB`);
-
-        await queueService.sendMessage({ taskId, status: "done" });
-        logger.info(`📩 Notificación enviada a RabbitMQ: tarea ${taskId} marcada como 'done'`);
-
-        fs.unlinkSync(filePath);
-        logger.info(`🗑️ Archivo eliminado: ${filePath}`);
-    } catch (error) {
-        logger.error(`❌ Error procesando la tarea ${taskId}:`, error);
-        const uploadTaskRepository = new UploadTaskRepository();
-        await uploadTaskRepository.updateTaskStatus(taskId, "error");
-    }
-}
-
-    static async startConsumer(): Promise<void> {
-        logger.info("🚀 Iniciando el consumidor de tareas...");
-        await queueService.connect();
-
-        queueService.consumeMessages(async (message, rawMsg) => {
-            try {
-                logger.info(`📩 Mensaje recibido en la cola: ${JSON.stringify(message)}`);
-
-                const { taskId, filePath } = message as { taskId: string; filePath: string };
-
-                if (!taskId || typeof taskId !== "string") {
-                    throw new Error("❌ El mensaje recibido no contiene un taskId válido.");
-                }
-
-                if (!filePath || typeof filePath !== "string") {
-                    throw new Error("❌ El mensaje recibido no contiene un filePath válido.");
-                }
-
-                await TaskProcessor.processTask(taskId, filePath);
-
-                // ✅ Confirmamos el mensaje para RabbitMQ
-                queueService.getChannel()?.ack(rawMsg);
-                logger.info(`📤 Mensaje confirmado con ack(): ${taskId}`);
-
-                logger.info("🔄 Esperando el siguiente mensaje...");
-            } catch (error) {
-                logger.error("❌ Error procesando mensaje de RabbitMQ:", error);
-            }
-        });
-    }
-}
-
-// ✅ Llamar a connectDatabase antes de iniciar el consumidor
-connectDatabase().then(() => {
-  if (require.main === module) {
-      TaskProcessor.startConsumer().catch((err) => {
-          logger.error("❌ Error al iniciar el consumidor de tareas:", err);
-      });
+    process.on('SIGINT', async () => {
+      logger.info('🛑 Closing RabbitMQ connection...');
+      await channel.close();
+      await connection.close();
+      process.exit(0);
+    });
+  } catch (error) {
+    logger.error(`❌ Error connecting to RabbitMQ: ${error instanceof Error ? error.message : error}`);
+    setTimeout(startTaskProcessor, 5000); // Retry connection
   }
-});
+}
+
+startTaskProcessor();

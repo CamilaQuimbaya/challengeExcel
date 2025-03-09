@@ -1,31 +1,35 @@
-import { IUploadTaskRepository } from "../../domain/repositories/IUploadTaskRepository";
-import { UploadTaskModel } from "./UploadTaskModel";
+import UploadTaskModel from '../persistence/UploadTaskModel';
+import { IUploadTaskRepository } from '../../domain/repositories/IUploadTaskRepository';
 
-export class UploadTaskRepository implements IUploadTaskRepository {
-  
-  async createTask(): Promise<string> {
-    const task = new UploadTaskModel({ status: "pending", errors: [] });
-    await task.save();
-    return task.id;
-  }
+class UploadTaskRepository implements IUploadTaskRepository {
+  async createTask(mapping: any, filePath: string, processedData: any): Promise<string> {
+    if (!mapping) {
+        throw new Error("Mapping is required to create a task");
+    }
 
-  async getTask(taskId: string): Promise<any> {
-    return await UploadTaskModel.findById(taskId);
-  }
+    const uploadTask = new UploadTaskModel({
+        status: 'pending',
+        errorList: [],
+        mapping,
+        filePath,
+        processedData,  // ✅ Guardamos los datos convertidos
+        createdAt: new Date(),
+        updatedAt: new Date()
+    });
 
-  async updateTask(id: string, updates: any): Promise<void> {
-    await UploadTaskModel.findByIdAndUpdate(id, { $set: updates });
-  }
-
-  async updateTaskStatus(taskId: string, status: "pending" | "processing" | "done" | "error"): Promise<void> {
-    await this.updateTask(taskId, { status });
-  }
-
-  async updateTaskErrors(taskId: string, errors: { row: number; col: number }[]): Promise<void> {
-    await this.updateTask(taskId, { errorList: errors });
-  }
-
-  async saveProcessedData(taskId: string, data: any[]): Promise<void> {
-    await this.updateTask(taskId, { data });
-  }
+    await uploadTask.save();
+    return uploadTask._id.toString();
 }
+
+
+
+    async updateTask(id: string, updates: any): Promise<void> {
+        await UploadTaskModel.findByIdAndUpdate(id, { ...updates, updatedAt: new Date() });
+    }
+
+    async getTask(id: string): Promise<any> {
+        return UploadTaskModel.findById(id).lean();
+    }
+}
+
+export default new UploadTaskRepository();

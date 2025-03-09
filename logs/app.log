@@ -531,3 +531,185 @@
 {"level":"info","message":"📨 Message received from queue:","status":"done","taskId":"67cd175241f48b8f57590fe5"}
 {"level":"info","message":"📩 Mensaje recibido en la cola: {\"taskId\":\"67cd175241f48b8f57590fe5\",\"status\":\"done\"}"}
 {"level":"error","message":"❌ Error procesando mensaje de RabbitMQ: ❌ El mensaje recibido no contiene un filePath válido.","stack":"Error: ❌ El mensaje recibido no contiene un filePath válido.\n    at Function.<anonymous> (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:76:27)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:4:12)\n    at C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\infrastructure\\messaging\\TaskProcessor.ts:65:64\n    at channel.consume.noAck (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\src\\application\\QueueService.ts:92:29)\n    at Channel.BaseChannel.dispatchMessage (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:483:12)\n    at Channel.BaseChannel.handleDelivery (C:\\Users\\camil\\Desktop\\challenge\\challengeExcel\\node_modules\\amqplib\\lib\\channel.js:492:15)\n    at Channel.emit (node:events:519:28)"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd1f4dff50f373e196822d"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd207971ac7fd06179b50f"}
+{"level":"info","message":"🔄 Intentando conectar a RabbitMQ en amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📨 Message received from queue:","taskId":"67cd145d2a846c60b748aa42"}
+{"level":"info","message":"📨 Message received from queue:","taskId":"67cd175241f48b8f57590fe5"}
+{"level":"info","message":"📨 Message received from queue:","taskId":"67cd1f4dff50f373e196822d"}
+{"level":"info","message":"📨 Message received from queue:","taskId":"67cd207971ac7fd06179b50f"}
+{"level":"error","message":"❌ Error procesando mensaje: Operation `uploadtasks.findOne()` buffering timed out after 10000ms"}
+{"level":"error","message":"❌ Error procesando mensaje: Operation `uploadtasks.findOne()` buffering timed out after 10000ms"}
+{"level":"error","message":"❌ Error procesando mensaje: Operation `uploadtasks.findOne()` buffering timed out after 10000ms"}
+{"level":"error","message":"❌ Error procesando mensaje: Operation `uploadtasks.findOne()` buffering timed out after 10000ms"}
+{"level":"info","message":"🛑 Cerrando conexión con RabbitMQ..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a RabbitMQ en amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🛑 Cerrando conexión con RabbitMQ..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd238ce35304b13ac414e9"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a RabbitMQ en amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📨 Message received from queue:","taskId":"67cd238ce35304b13ac414e9"}
+{"level":"info","message":"🛠️ Procesando archivo: uploads\\1741497228394-test_data.xlsx"}
+{"level":"info","message":"✅ Estado de la tarea actualizado a 'done' en MongoDB"}
+{"level":"info","message":"🛑 Cerrando conexión con RabbitMQ..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"warn","message":"⚠️ RabbitMQ channel is not initialized. Retrying connection..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67cd240d17fa69205cdd3b80"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a RabbitMQ en amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📨 Message received from queue:","taskId":"67cd240d17fa69205cdd3b80"}
+{"level":"info","message":"🛠️ Procesando archivo: uploads\\1741497357115-test_data.xlsx"}
+{"level":"info","message":"✅ Estado de la tarea actualizado a 'done' en MongoDB"}
+{"level":"info","message":"🛑 Cerrando conexión con RabbitMQ..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a RabbitMQ en amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🛑 Cerrando conexión con RabbitMQ..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📨 Received message from queue:","taskId":"67cd3c5807ddb02718ff6a6a"}
+{"level":"info","message":"🛠️ Processing file: uploads\\6552f9f3b3e2744240c060aca0a42265"}
+{"level":"info","message":"✅ Task status updated to 'done' in MongoDB"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📨 Received message from queue:","taskId":"67cd4071f5a3db5ec84adc47"}
+{"level":"info","message":"🛠️ Processing file: uploads\\cee07fa32a174766b57aac139cab6c90"}
+{"level":"info","message":"✅ Task status updated to 'done' in MongoDB"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📨 Received message from queue:","taskId":"67cd40c229175ab16501e27e"}
+{"level":"info","message":"🛠️ Processing file: uploads\\61685313682e444ffe2fff1946342234"}
+{"level":"info","message":"✅ Task status updated to 'done' in MongoDB"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Connecting to RabbitMQ at amqp://localhost:5672..."}
+{"level":"info","message":"✅ Connected to RabbitMQ and queue asserted"}
+{"level":"info","message":"📨 Received message from queue:","taskId":"67cd4231147f890b7ca3f994"}
+{"level":"info","message":"🛠️ Processing file: uploads\\493ac2237abed850757a90c5a21f77d4"}
+{"level":"info","message":"✅ Task status updated to 'done' in MongoDB"}
+{"level":"info","message":"🛑 Closing RabbitMQ connection..."}

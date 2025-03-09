@@ -1,8 +1,37 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const UploadTaskSchema = new mongoose.Schema({
-  status: { type: String, required: true, enum: ["pending", "processing", "done", "error"], default: "pending" },
-  errorList: { type: Array, default: [] } // ✅ Nuevo nombre
+    status: {
+        type: String,
+        enum: ['pending', 'processing', 'done'],
+        required: true,
+        default: 'pending'
+    },
+    errorList: {
+        type: [{ row: Number, col: Number }],
+        default: []
+    },
+    mapping: {
+        type: Object,
+        required: true
+    },
+    filePath: {
+        type: String,
+        required: true
+    },
+    processedData: {  // ✅ Agregar este campo para guardar los datos convertidos
+        type: Array,
+        default: []
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now
+    }
 });
 
-export const UploadTaskModel = mongoose.model("UploadTask", UploadTaskSchema);
+const UploadTaskModel = mongoose.model('UploadTask', UploadTaskSchema);
+export default UploadTaskModel;
