@@ -1,5 +1,6 @@
 import xlsx from 'xlsx';
 import UploadTaskRepository from '../infrastructure/persistence/UploadTaskRepository';
+import RabbitMQService from '../infrastructure/messaging/RabbitMQService';
 
 interface MappingFormat {
     [key: string]: 'String' | 'Number' | 'Array<Number>';
@@ -11,8 +12,6 @@ interface ErrorEntry {
 }
 
 class ExcelProcessor {
-    private errors: ErrorEntry[] = [];
-
     async processFile(filePath: string, mapping: MappingFormat) {
         const workbook = xlsx.readFile(filePath);
         const sheetName = workbook.SheetNames[0];
@@ -24,11 +23,12 @@ class ExcelProcessor {
         
         this.validateHeaders(headers, mapping);
         
+        let errors: ErrorEntry[] = [];
         const processedData = rows.map((row, rowIndex) => 
-            this.mapRowToObject(row, headers, mapping, rowIndex + 2)
+            this.mapRowToObject(row, headers, mapping, rowIndex + 2, errors)
         ).filter(item => item !== null);
 
-        return this.saveUploadTask(processedData, mapping, filePath);
+        return this.saveUploadTask(processedData, mapping, filePath, errors);
     }
 
     private validateHeaders(headers: string[], mapping: MappingFormat) {
@@ -38,64 +38,45 @@ class ExcelProcessor {
         }
     }
 
-    private mapRowToObject(row: any[], headers: string[], mapping: MappingFormat, rowIndex: number) {
-      const obj: any = {};
-      let isValid = true;
-  
-      headers.forEach((header, colIndex) => {
-          const type = mapping[header as keyof MappingFormat];
-          if (!type) return; // Si la columna no está en el mapeo, ignorar
-  
-          const cellValue = row[colIndex];
-  
-          if (type === 'Number') {
-              const numberValue = Number(cellValue);
-              if (isNaN(numberValue)) {
-                  this.errors.push({ row: rowIndex, col: colIndex + 1 }); // ❌ Guardar errores con fila y columna
-                  isValid = false;
-              } else {
-                  obj[header] = numberValue;
-              }
-          } else if (type === 'String') {
-              obj[header] = String(cellValue || '');
-          } else if (type === 'Array<Number>') {
-              obj[header] = cellValue
-                  ? cellValue.split(',').map((num: string) => Number(num.trim())).filter((n: number) => !isNaN(n)).sort((a: number, b: number) => a - b)
-                  : [];
-          }
-      });
-  
-      return isValid ? obj : null; // Si la fila tiene errores, se ignora
-  }
-  
-
-    private parseNumber(value: any, rowIndex: number, colIndex: number): number | null {
-        const numberValue = Number(value);
-        if (isNaN(numberValue)) {
-            this.errors.push({ row: rowIndex, col: colIndex + 1 });
-            return null;
-        }
-        return numberValue;
+    private mapRowToObject(row: any[], headers: string[], mapping: MappingFormat, rowIndex: number, errors: ErrorEntry[]) {
+        const obj: any = {};
+        let isValid = true;
+    
+        headers.forEach((header, colIndex) => {
+            const type = mapping[header as keyof MappingFormat];
+            if (!type) return;
+    
+            const cellValue = row[colIndex];
+    
+            if (type === 'Number') {
+                const numberValue = Number(cellValue);
+                if (isNaN(numberValue)) {
+                    errors.push({ row: rowIndex, col: colIndex + 1 });
+                    isValid = false;
+                } else {
+                    obj[header] = numberValue;
+                }
+            } else if (type === 'String') {
+                obj[header] = String(cellValue || '');
+            } else if (type === 'Array<Number>') {
+                obj[header] = cellValue
+                    ? cellValue.split(',').map((num: string) => Number(num.trim())).filter((n: number) => !isNaN(n)).sort((a: number, b: number) => a - b)
+                    : [];
+            }
+        });
+    
+        return isValid ? obj : null;
     }
 
-    private parseNumberArray(value: string): number[] {
-        return value.split(',')
-            .map((num) => parseFloat(num.trim()))
-            .filter((n) => !isNaN(n))
-            .sort((a, b) => a - b);
-    }
-
-    private async saveUploadTask(processedData: any[], mapping: MappingFormat, filePath: string) {
-      const taskId = await UploadTaskRepository.createTask(mapping, filePath, processedData);
-      await UploadTaskRepository.updateTask(taskId, { status: 'processing', errors: this.errors });
-      return { id: taskId, data: processedData, errors: this.errors };
-  }
-  
-  
-
-    getErrors(page: number, limit: number) {
-        const startIndex = (page - 1) * limit;
-        return this.errors.slice(startIndex, startIndex + limit);
+    private async saveUploadTask(processedData: any[], mapping: MappingFormat, filePath: string, errors: ErrorEntry[]) {
+        const taskId = await UploadTaskRepository.createTask(mapping, filePath, processedData);
+        
+        // Enviar tarea a RabbitMQ para su procesamiento asincrónico
+        await RabbitMQService.publishMessage(JSON.stringify({ taskId, filePath, mapping }));
+        
+        // Actualizar la tarea como en proceso
+        await UploadTaskRepository.updateTask(taskId, { status: 'processing', errors });
+        return { id: taskId, data: processedData, errors };
     }
 }
 
