@@ -43,6 +43,23 @@ Antes de instalar el proyecto, asegúrate de tener **los siguientes servicios en
    ```bash
    rabbitmq-server
    ```
+3. **Configurar almacenamiento para archivos subidos**
+   - **Modo local (desarrollo):** Se usará la carpeta `uploads/` en la raíz del proyecto.
+     ```bash
+     mkdir uploads
+     ```
+     ⚠️ Esta carpeta se usa para almacenar los archivos subidos y debe existir antes de ejecutar el servidor.
+   - **Modo producción (servidor en la nube):** Se recomienda usar un servicio de almacenamiento externo como **AWS S3**, **Google Cloud Storage** o **Azure Blob Storage**. En este caso, se debe hacer la integración correspondiente con el servicio seleccionado y configurar la variable de entorno adecuada para indicar el destino de los archivos subidos.
+     
+     Ejemplo de configuración para AWS S3 en el archivo `.env`:
+     ```ini
+     STORAGE_TYPE=s3
+     AWS_S3_BUCKET=nombre-del-bucket
+     AWS_REGION=us-east-1
+     AWS_ACCESS_KEY_ID=tu-access-key
+     AWS_SECRET_ACCESS_KEY=tu-secret-key
+     ```
+     ⚠️ **Para el objetivo de este proyecto, solo se usará el almacenamiento local** y no se incluirá la integración con servicios de almacenamiento en la nube.
 
 ---
 
