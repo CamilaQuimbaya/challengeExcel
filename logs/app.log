@@ -1827,3 +1827,317 @@
 {"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
 {"level":"info","message":"🚀 Server running on port 3000"}
 {"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce90c2debf56d6af9b0918"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce90c2debf56d6af9b0918"}
+{"level":"info","message":"✅ Task creada con ID: 67ce90c2debf56d6af9b0918"}
+{"level":"info","message":"📨 Received task: 67ce90c2debf56d6af9b0918, processing..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce90c2debf56d6af9b0918"}
+{"level":"info","message":"✅ Task creada con ID: 67ce90c269ff2c2eb0ef508c"}
+{"level":"info","message":"✅ Task creada con ID: 67ce90c269ff2c2eb0ef508f"}
+{"level":"info","message":"✅ Task creada con ID: 67ce90c269ff2c2eb0ef5092"}
+{"level":"info","message":"✅ Task creada con ID: 67ce90c269ff2c2eb0ef5095"}
+{"level":"info","message":"✅ Task 67ce90c2debf56d6af9b0918 actualizada con éxito."}
+{"level":"info","message":"✅ Task 67ce90c2debf56d6af9b0918 completed with 0 errors."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}

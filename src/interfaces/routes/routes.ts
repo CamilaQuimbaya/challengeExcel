@@ -24,7 +24,7 @@ router.get('/tasks/:taskId', async (req, res) => {
 });
 
 // Endpoint para obtener errores paginados de una tarea
-router.get('/tasks/:taskId/errors', async (req, res) => {
+router.get('/tasks/:taskId/errorList', async (req, res) => {
     try {
         await UploadController.getTaskErrors(req, res);
     } catch (error) {
