@@ -1,17 +1,10 @@
 import { Request, Response } from 'express';
 import TaskService from '../../application/TaskService';
-import UploadTaskRepository from '../../infrastructure/persistence/UploadTaskRepository';
+import UploadTaskRepository from '../../infrastructure/persistence/task/UploadTaskRepository';
 import { logger } from '../../config/logger';
 
 class UploadController {
-    private validateMapping(mappingString: string): Record<string, 'String' | 'Number' | 'Array<Number>'> | null {
-        try {
-            const mapping = JSON.parse(mappingString);
-            return typeof mapping === 'object' ? mapping : null;
-        } catch {
-            return null;
-        }
-    }
+    
 
     async uploadFile(req: Request, res: Response): Promise<void> {
         try {
@@ -20,16 +13,11 @@ class UploadController {
                 return;
             }
 
-            const mapping = this.validateMapping(req.body.mapping);
-            if (!mapping) {
-                res.status(400).json({ message: 'Invalid or missing mapping format' });
-                return;
-            }
-
+           
             const filePath = req.file.path;
             
             logger.info('✅ UploadController: Llamando a TaskService.startTask()...');
-            const result = await TaskService.startTask(filePath, mapping);
+            const result = await TaskService.startTask(filePath);
             logger.info(`✅ Task creada con ID: ${result.id}`);
 
             res.status(201).json({ taskId: result.id });
@@ -42,7 +30,7 @@ class UploadController {
     async getTaskStatus(req: Request, res: Response): Promise<void> {
         try {
             const { taskId } = req.params;
-            const task = await UploadTaskRepository.getTask(taskId);
+            const task = await UploadTaskRepository.getById(taskId);
             if (!task) {
                 res.status(404).json({ message: 'Task not found' });
                 return;
@@ -64,7 +52,7 @@ class UploadController {
         try {
             const { taskId } = req.params;
             const { page = 1, limit = 10 } = req.query;
-            const task = await UploadTaskRepository.getTask(taskId);
+            const task = await UploadTaskRepository.getById(taskId);
             if (!task) {
                 res.status(404).json({ message: 'Task not found' });
                 return;

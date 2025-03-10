@@ -1,3 +1,5 @@
+import { error } from "console";
+
 interface ValidationError {
     row: number;
     col: number;
@@ -10,7 +12,8 @@ interface ValidationError {
   
   class ExcelValidator {
     static validateRow(row: any[], headers: string[], mapping: Record<string, 'String' | 'Number' | 'Array<Number>'>, rowIndex: number) {
-      const errors: { row: number; col: number; error: string }[] = [];
+      let errors: { row: number; nameError? : string, ageError? : string, numsError? : string} | null = null;
+      
   
       headers.forEach((header, colIndex) => {
         const expectedType = mapping[header as keyof typeof mapping];
@@ -21,15 +24,15 @@ interface ValidationError {
         if (expectedType === 'Number') {
           const numberValue = Number(cellValue);
           if (isNaN(numberValue)) {
-            errors.push({ row: rowIndex + 1, col: colIndex + 1, error: `Expected a Number but got '${cellValue}'` });
+            errors = {...errors, row: rowIndex + 1 , ageError : `Expected a Number but got '${cellValue}'`};
           }
         } else if (expectedType === 'String') {
           if (typeof cellValue !== 'string') {
-            errors.push({ row: rowIndex + 1, col: colIndex + 1, error: `Expected a String but got '${cellValue}'` });
+            errors = {...errors, row: rowIndex + 1 , nameError : `Expected a String but got '${cellValue}'`};
           }
         } else if (expectedType === 'Array<Number>') {
           if (typeof cellValue !== 'string' || !cellValue.split(',').every(num => !isNaN(Number(num.trim())))) {
-            errors.push({ row: rowIndex + 1, col: colIndex + 1, error: `Expected an array of numbers but got '${cellValue}'` });
+            errors = {...errors, row: rowIndex + 1 , numsError : `Expected an array of numbers but got '${cellValue}'`};
           }
         }
       });

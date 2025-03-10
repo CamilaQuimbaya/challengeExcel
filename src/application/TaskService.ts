@@ -1,12 +1,14 @@
 import { logger } from '../config/logger';
-import UploadTaskRepository from '../infrastructure/persistence/UploadTaskRepository';
+import UploadTaskRepository from '../infrastructure/persistence/task/UploadTaskRepository';
 import ExcelProcessor from '../application/ExcelProcessor';
 import ExcelValidator from '../application/ExcelValidator';
 import QueueService from './QueueService';
+import ErrorRepository from '../infrastructure/persistence/errors/ErrorRepository';
+import PeopleRepository from '../infrastructure/persistence/people/PeopleRepository';
 
 class TaskService {
-    async startTask(filePath: string, mapping: Record<string, 'String' | 'Number' | 'Array<Number>'>) {
-        const taskId = await UploadTaskRepository.createTask(mapping, filePath, []);
+    async startTask(filePath: string,) {
+        const taskId = await UploadTaskRepository.create({ filePath, status: 'pending' });
     
         console.log(`✅ TaskService: Tarea creada con ID: ${taskId}`);
     
@@ -22,10 +24,11 @@ class TaskService {
     async processTask(taskId: string) {
         try {
             logger.info(`📨 Processing task: ${taskId}`);
-            const task = await UploadTaskRepository.getTask(taskId);
+            const task = await UploadTaskRepository.getById(taskId);
             if (!task) throw new Error(`Task ${taskId} not found`);
     
-            const { mapping, filePath } = task;
+            const { filePath } = task;
+            const mapping: Record<string, 'String' | 'Number' | 'Array<Number>'> = { "name": "String", "age": "Number", "nums": "Array<Number>" };
             const rows = ExcelProcessor.readFile(filePath);
             
             const headers = rows.shift();
@@ -33,11 +36,12 @@ class TaskService {
     
             let errors: { row: number; col: number; error: string }[] = [];
             let processedData: any[] = [];
-    
-            rows.forEach((row, rowIndex) => {
-                const validationErrors = ExcelValidator.validateRow(row, headers, mapping, rowIndex + 1);
-                if (validationErrors.length > 0) {
-                    errors.push(...validationErrors);
+
+            for (const [rowIndex,row] of rows.entries()) {
+                const validationErrors:any = ExcelValidator.validateRow(row, headers,mapping,rowIndex + 1);
+                if (validationErrors) {
+                    await ErrorRepository.create({ ...validationErrors, taskId });
+                    await UploadTaskRepository.addOneErrorCount(taskId);
                 } else {
                     const obj: any = {};
                     headers.forEach((header, colIndex) => {
@@ -51,17 +55,20 @@ class TaskService {
                             obj[header] = cellValue.split(',').map((num: string) => Number(num.trim())).filter((n: number) => !isNaN(n)).sort((a: number, b: number) => a - b);
                         }
                     });
-                    processedData.push(obj);
+                    await PeopleRepository.create({...obj, taskId});
+                    await UploadTaskRepository.addOneNewPeopleCount(taskId);
                 }
-            });
+            }
+    
+            
     
             console.log(`🔍 Errores detectados antes de guardar en DB:`, errors);
     
-            await UploadTaskRepository.updateTask(taskId, { status: 'done', processedData, errors });
+            await UploadTaskRepository.update(taskId, { status: 'done' });
             logger.info(`✅ Task ${taskId} completed with ${errors.length} errors.`);
         } catch (error) {
             logger.error(`❌ Error processing task: ${error instanceof Error ? error.message : error}`);
-            await UploadTaskRepository.updateTask(taskId, { status: 'failed' });
+            await UploadTaskRepository.update(taskId, { status: 'failed' });
         }
     }
 }    

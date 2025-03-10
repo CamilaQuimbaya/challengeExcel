@@ -7,7 +7,8 @@
     "dev": "nodemon --ext ts --exec ts-node src/server.ts",
     "dev-mq": "nodemon --ext ts --exec ts-node src/infrastructure/messaging/QueueConsumer.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "start-mq": "node dist/infrastructure/messaging/QueueConsumer.js"
   },
   "dependencies": {
     "@types/amqplib": "0.10.3",
