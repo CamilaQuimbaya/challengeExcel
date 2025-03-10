@@ -27,6 +27,11 @@ class ErrorRepository implements IRepository {
     async getById(id: string): Promise<any> {
         return errorModel.findById(id).lean();
     }
+
+    async getByTaskId(taskId: string): Promise<any[]> {
+        return errorModel.find({ taskId }).lean();
+    }
+    
 }
 
 export default new ErrorRepository();

@@ -32,4 +32,24 @@ router.get('/tasks/:taskId/errors', async (req, res) => {
     }
 });
 
+
+// Obtener todas las personas asociadas a una tarea específica
+router.get('/tasks/:taskId/people', async (req, res) => {
+    try {
+        await UploadController.getPeopleByTaskId(req, res);
+    } catch (error) {
+        res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
+    }
+});
+
+// Obtener todos los errores asociados a una tarea específica
+router.get('/tasks/:taskId/errors', async (req, res) => {
+    try {
+        await UploadController.getErrorsByTaskId(req, res);
+    } catch (error) {
+        res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
+    }
+});
+
+
 export default router;

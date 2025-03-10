@@ -27,6 +27,11 @@ class PeopleRepository implements IRepository {
     async getById(id: string): Promise<any> {
         return PersonModel.findById(id).lean();
     }
+
+    async getByTaskId(taskId: string): Promise<any[]> {
+        return PeopleModel.find({ taskId }).lean();
+    }
+    
 }
 
 export default new PeopleRepository();

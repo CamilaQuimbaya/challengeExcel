@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import TaskService from '../../application/TaskService';
 import UploadTaskRepository from '../../infrastructure/persistence/task/UploadTaskRepository';
 import { logger } from '../../config/logger';
+import PeopleRepository from '../../infrastructure/persistence/people/PeopleRepository';
+import ErrorRepository from '../../infrastructure/persistence/errors/ErrorRepository';
 
 class UploadController {
     
@@ -67,6 +69,42 @@ class UploadController {
             res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
         }
     }
+
+    async getPeopleByTaskId(req: Request, res: Response): Promise<void> {
+        try {
+            const { taskId } = req.params;
+            const people = await PeopleRepository.getByTaskId(taskId);
+            
+            if (!people || people.length === 0) {
+                res.status(404).json({ message: 'No people found for this task' });
+                return;
+            }
+
+            res.status(200).json({ people });
+        } catch (error) {
+            logger.error(`❌ Error en getPeopleByTaskId: ${error instanceof Error ? error.message : error}`);
+            res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
+        }
+    }
+
+    async getErrorsByTaskId(req: Request, res: Response): Promise<void> {
+        try {
+            const { taskId } = req.params;
+            const errors = await ErrorRepository.getByTaskId(taskId);
+            
+            if (!errors || errors.length === 0) {
+                res.status(404).json({ message: 'No errors found for this task' });
+                return;
+            }
+
+            res.status(200).json({ errors });
+        } catch (error) {
+            logger.error(`❌ Error en getErrorsByTaskId: ${error instanceof Error ? error.message : error}`);
+            res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
+        }
+    }
 }
+
+
 
 export default new UploadController();
