@@ -2141,3 +2141,12 @@
 {"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
 {"level":"info","message":"🚀 Server running on port 3000"}
 {"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
