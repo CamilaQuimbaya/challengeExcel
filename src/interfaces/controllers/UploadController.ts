@@ -1,8 +1,18 @@
 import { Request, Response } from 'express';
 import TaskService from '../../application/TaskService';
-import UploadTaskModel from '../../infrastructure/persistence/UploadTaskModel';
+import UploadTaskRepository from '../../infrastructure/persistence/UploadTaskRepository';
+import { logger } from '../../config/logger';
 
 class UploadController {
+    private validateMapping(mappingString: string): Record<string, 'String' | 'Number' | 'Array<Number>'> | null {
+        try {
+            const mapping = JSON.parse(mappingString);
+            return typeof mapping === 'object' ? mapping : null;
+        } catch {
+            return null;
+        }
+    }
+
     async uploadFile(req: Request, res: Response): Promise<void> {
         try {
             if (!req.file) {
@@ -10,33 +20,29 @@ class UploadController {
                 return;
             }
 
-            let mapping;
-            try {
-                mapping = JSON.parse(req.body.mapping);
-            } catch (error) {
-                res.status(400).json({ message: 'Invalid JSON format in mapping' });
-                return;
-            }
-
-            if (!mapping || typeof mapping !== 'object') {
+            const mapping = this.validateMapping(req.body.mapping);
+            if (!mapping) {
                 res.status(400).json({ message: 'Invalid or missing mapping format' });
                 return;
             }
 
             const filePath = req.file.path;
+            
+            logger.info('✅ UploadController: Llamando a TaskService.startTask()...');
             const result = await TaskService.startTask(filePath, mapping);
+            logger.info(`✅ Task creada con ID: ${result.id}`);
 
             res.status(201).json({ taskId: result.id });
         } catch (error) {
-            const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-            res.status(500).json({ message: errorMessage });
+            logger.error(`❌ Error en UploadController: ${error instanceof Error ? error.message : error}`);
+            res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
         }
     }
 
     async getTaskStatus(req: Request, res: Response): Promise<void> {
         try {
             const { taskId } = req.params;
-            const task = await UploadTaskModel.findById(taskId).lean();
+            const task = await UploadTaskRepository.getTask(taskId);
             if (!task) {
                 res.status(404).json({ message: 'Task not found' });
                 return;
@@ -44,13 +50,13 @@ class UploadController {
 
             res.status(200).json({
                 status: task.status,
-                errorsCount: task.errorList?.length || 0,
+                errorsCount: task.errors?.length || 0,
                 mapping: task.mapping || {},
-                processedData: task.processedData || []
+                processedDataCount: task.processedData?.length || 0
             });
         } catch (error) {
-            const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-            res.status(500).json({ message: errorMessage });
+            logger.error(`❌ Error en getTaskStatus: ${error instanceof Error ? error.message : error}`);
+            res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
         }
     }
 
@@ -58,19 +64,19 @@ class UploadController {
         try {
             const { taskId } = req.params;
             const { page = 1, limit = 10 } = req.query;
-            const task = await UploadTaskModel.findById(taskId).lean();
+            const task = await UploadTaskRepository.getTask(taskId);
             if (!task) {
                 res.status(404).json({ message: 'Task not found' });
                 return;
             }
 
             const startIndex = (+page - 1) * +limit;
-            const paginatedErrors = task.errorList.slice(startIndex, startIndex + +limit);
+            const paginatedErrors = task.errors?.slice(startIndex, startIndex + +limit) || [];
 
             res.status(200).json({ errors: paginatedErrors });
         } catch (error) {
-            const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-            res.status(500).json({ message: errorMessage });
+            logger.error(`❌ Error en getTaskErrors: ${error instanceof Error ? error.message : error}`);
+            res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
         }
     }
 }

@@ -977,3 +977,167 @@
 {"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
 {"level":"info","message":"🚀 Server running on port 3000"}
 {"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce3ad379ccbeff7b37640c"}
+{"level":"info","message":"✅ Task creada con ID: 67ce3ad379ccbeff7b37640c"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce3c2bbf9b4be4a2fbf674"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce3c2bbf9b4be4a2fbf674"}
+{"level":"info","message":"✅ Task creada con ID: 67ce3c2bbf9b4be4a2fbf674"}
+{"level":"info","message":"📨 Received task: 67ce3c2bbf9b4be4a2fbf674, processing..."}
+{"level":"info","message":"📨 Processing task: 67ce3c2bbf9b4be4a2fbf674"}
+{"level":"error","message":"❌ Error processing task: Operation `uploadtasks.findOne()` buffering timed out after 10000ms"}
+{"level":"error","message":"❌ Error in QueueConsumer: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms"}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce3c94bf9b4be4a2fbf676"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce3c94bf9b4be4a2fbf676"}
+{"level":"info","message":"✅ Task creada con ID: 67ce3c94bf9b4be4a2fbf676"}
+{"level":"info","message":"📨 Received task: 67ce3c94bf9b4be4a2fbf676, processing..."}
+{"level":"info","message":"📨 Processing task: 67ce3c94bf9b4be4a2fbf676"}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce3c99bf9b4be4a2fbf678"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce3c99bf9b4be4a2fbf678"}
+{"level":"info","message":"✅ Task creada con ID: 67ce3c99bf9b4be4a2fbf678"}
+{"level":"info","message":"📨 Received task: 67ce3c99bf9b4be4a2fbf678, processing..."}
+{"level":"info","message":"📨 Processing task: 67ce3c99bf9b4be4a2fbf678"}
+{"level":"error","message":"❌ Error processing task: Operation `uploadtasks.findOne()` buffering timed out after 10000ms"}
+{"level":"error","message":"❌ Error processing task: Operation `uploadtasks.findOne()` buffering timed out after 10000ms"}
+{"level":"error","message":"❌ Error in QueueConsumer: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms"}
+{"level":"error","message":"❌ Error in QueueConsumer: Operation `uploadtasks.findOneAndUpdate()` buffering timed out after 10000ms"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce3d63b9e5d0195237e95a"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce3d63b9e5d0195237e95a"}
+{"level":"info","message":"✅ Task creada con ID: 67ce3d63b9e5d0195237e95a"}
+{"level":"info","message":"📨 Received task: 67ce3d63b9e5d0195237e95a, processing..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce3d63b9e5d0195237e95a"}
+{"level":"info","message":"✅ Task 67ce3d63b9e5d0195237e95a actualizada con éxito."}
+{"level":"info","message":"✅ Task 67ce3d63b9e5d0195237e95a completed with 3 errors."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce40cc193c0f9c2103f8df"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce40cc193c0f9c2103f8df"}
+{"level":"info","message":"✅ Task creada con ID: 67ce40cc193c0f9c2103f8df"}
+{"level":"info","message":"📨 Received task: 67ce40cc193c0f9c2103f8df, processing..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce40cc193c0f9c2103f8df"}
+{"level":"info","message":"✅ Task 67ce40cc193c0f9c2103f8df actualizada con éxito."}
+{"level":"info","message":"✅ Task 67ce40cc193c0f9c2103f8df completed with 3 errors."}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce42f3193c0f9c2103f8e4"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce42f3193c0f9c2103f8e4"}
+{"level":"info","message":"✅ Task creada con ID: 67ce42f3193c0f9c2103f8e4"}
+{"level":"info","message":"📨 Received task: 67ce42f3193c0f9c2103f8e4, processing..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce42f3193c0f9c2103f8e4"}
+{"level":"error","message":"❌ Error processing task: The value of \"offset\" is out of range. It must be >= 0 && <= 17825792. Received 17825798"}
+{"level":"info","message":"✅ Task 67ce42f3193c0f9c2103f8e4 actualizada con éxito."}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🚀 Starting Task Processor..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"🚀 Server running on port 3000"}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"✅ UploadController: Llamando a TaskService.startTask()..."}
+{"level":"info","message":"✅ Task creada con ID: 67ce46a951f047bac0760626"}
+{"level":"info","message":"📩 Message sent to queue 'upload_tasks':","taskId":"67ce46a951f047bac0760626"}
+{"level":"info","message":"✅ Task creada con ID: 67ce46a951f047bac0760626"}
+{"level":"info","message":"📨 Received task: 67ce46a951f047bac0760626, processing..."}
+{"level":"info","message":"🔄 Intentando conectar a MongoDB..."}
+{"level":"info","message":"✅ MongoDB Connected"}
+{"level":"info","message":"📨 Processing task: 67ce46a951f047bac0760626"}
+{"level":"info","message":"✅ Task 67ce46a951f047bac0760626 actualizada con éxito."}
+{"level":"info","message":"✅ Task 67ce46a951f047bac0760626 completed with 3 errors."}
