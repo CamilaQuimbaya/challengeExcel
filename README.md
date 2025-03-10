@@ -81,12 +81,12 @@ LOG_LEVEL=info
 ⚠️ **El orden de ejecución es importante**:  
 1. **Levantar el Worker de RabbitMQ**  
    ```bash
-   yarn dev-mq
+   yarn start-mq
    ```
 
 2. **Levantar el Servidor Express**  
    ```bash
-   yarn dev
+   yarn start
    ```
 
 💡 Ahora puedes acceder a la API en **`http://localhost:3000`**.
