@@ -12,7 +12,9 @@ Utiliza **TypeScript, Express, Mongoose y RabbitMQ** para manejar grandes volúm
 │🌐 📂 src/
 │   │🌐 📂 application/                # Lógica de aplicación
 │   │   │🌐 📚 QueueService.ts         # Servicio para manejar RabbitMQ
-│   │   │🌐 📚 ExcelProcessor.ts       # Servicio para procesar archivos Excel
+│   │   │🌐 📚 TaskService.ts          # Servicio para procesar los Task
+│   │   │🌐 📚 ExcelProcessor.ts       # Servicio para procesar el archivo de excel
+│   │   │🌐 📚 ExcelValidator.ts       # Servicio para validar los campos del archivo
 │   │🌐 📂 config/                     # Configuración general
 │   │   │🌐 📚 env.ts                   # Variables de entorno
 │   │   │🌐 📚 database.ts              # Conexión a MongoDB
