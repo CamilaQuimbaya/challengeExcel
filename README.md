@@ -49,7 +49,7 @@ Sigue estos pasos para instalar y ejecutar el proyecto:
 
 ### 1️⃣ **Clonar el Repositorio**
 ```bash
-git clone https://github.com/tu-usuario/challenge-excel.git
+git clone https://github.com/CamilaQuimbaya/challengeExcel.git
 cd challenge-excel
 ```
 
